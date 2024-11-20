@@ -1,12 +1,12 @@
 # Giám sát và Cảnh báo Mực Nước Khai Thác tại Cảng Biển
-### Đặt vấn đề
+### Đặt bài toán
 Trong bối cảnh toàn cầu hóa và sự phát triển không ngừng của ngành vận tải biển, bản thân là một người sinh ra và lớn lên tại Hải Phòng, tôi nhận thấy rằng các cảng biển ngày càng phải đối mặt với yêu cầu nâng cao năng lực tiếp nhận và vận hành các tàu có trọng tải lớn. Một trong những yếu tố then chốt ảnh hưởng trực tiếp đến sự an toàn và hiệu quả hoạt động của cảng là mực nước khai thác – độ sâu thực tế tại các khu vực tiếp nhận tàu thuyền.
 
 Mực nước khai thác không chỉ đóng vai trò đảm bảo an toàn hàng hải, giúp các tàu thuyền tránh được nguy cơ mắc cạn, va chạm mà còn quyết định khả năng tiếp nhận tàu lớn và tối ưu hóa hiệu quả kinh tế của cảng. Đặc biệt, trong bối cảnh biến đổi khí hậu, mực nước tại cảng biển ngày càng có sự thay đổi thất thường do triều cường, dòng chảy và hiện tượng nước biển dâng. Việc giám sát mực nước liên tục và chính xác trở thành yêu cầu cấp thiết để đảm bảo vận hành ổn định của cảng biển, nâng cao năng lực cạnh tranh và tuân thủ các tiêu chuẩn quốc tế về an toàn hàng hải.
 
 Tuy nhiên, việc đo lường và giám sát mực nước khai thác tại nhiều cảng biển hiện nay vẫn còn dựa vào các phương pháp thủ công hoặc thiết bị không đồng bộ, dẫn đến sai số cao và khả năng phản ứng chậm trước các tình huống khẩn cấp. Điều này không chỉ ảnh hưởng đến hiệu quả khai thác cảng mà còn làm gia tăng nguy cơ xảy ra các sự cố hàng hải, gây thiệt hại lớn về kinh tế và môi trường.
 
-### Ý tưởng
+### Nội dung chính
 Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nước khai thác tại cảng biển và cung cấp cảnh báo trực quan cũng như điều khiển ra hiệu cho tàu, hệ thống được thiết kế như sau:
 
 ***Cảm biến đo mực nước (Water Sensor):***
