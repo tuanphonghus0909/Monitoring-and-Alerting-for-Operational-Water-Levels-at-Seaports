@@ -1,6 +1,6 @@
 # Monitoring-and-Alerting-for-Operational-Water-Levels-at-Seaports
 ### Đặt vấn đề
-Trong bối cảnh toàn cầu hóa và sự phát triển không ngừng của ngành vận tải biển, các cảng biển hiện đại ngày càng phải đối mặt với yêu cầu nâng cao năng lực tiếp nhận và vận hành các tàu có trọng tải lớn. Một trong những yếu tố then chốt ảnh hưởng trực tiếp đến sự an toàn và hiệu quả hoạt động của cảng là mực nước khai thác – độ sâu thực tế tại các khu vực tiếp nhận tàu thuyền.
+Trong bối cảnh toàn cầu hóa và sự phát triển không ngừng của ngành vận tải biển, bản thân là một người sinh ra và lớn lên tại Hải Phòng, tôi nhận thấy rằng các cảng biển ngày càng phải đối mặt với yêu cầu nâng cao năng lực tiếp nhận và vận hành các tàu có trọng tải lớn. Một trong những yếu tố then chốt ảnh hưởng trực tiếp đến sự an toàn và hiệu quả hoạt động của cảng là mực nước khai thác – độ sâu thực tế tại các khu vực tiếp nhận tàu thuyền.
 
 Mực nước khai thác không chỉ đóng vai trò đảm bảo an toàn hàng hải, giúp các tàu thuyền tránh được nguy cơ mắc cạn, va chạm mà còn quyết định khả năng tiếp nhận tàu lớn và tối ưu hóa hiệu quả kinh tế của cảng. Đặc biệt, trong bối cảnh biến đổi khí hậu, mực nước tại cảng biển ngày càng có sự thay đổi thất thường do triều cường, dòng chảy và hiện tượng nước biển dâng. Việc giám sát mực nước liên tục và chính xác trở thành yêu cầu cấp thiết để đảm bảo vận hành ổn định của cảng biển, nâng cao năng lực cạnh tranh và tuân thủ các tiêu chuẩn quốc tế về an toàn hàng hải.
 
@@ -35,4 +35,5 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 ### Sơ đồ khối dự kiến
 ![Hình 1](https://github.com/user-attachments/assets/b8ee558f-c87c-40b4-842d-002a7d4b914a)
 *Hình 1*
-
+### Mục tiêu đề tài
+Đề tài này xây dựng hệ thống giám sát và cảnh báo mực nước tại cảng biển sử dụng IoT. Mục tiêu chính là đo mực nước bằng cảm biến và vi điều khiển ESP32, cảnh báo qua LED RGB (xanh, vàng, đỏ) tùy vào mức độ an toàn của mực nước. Dữ liệu sẽ được đẩy lên MQTT để giám sát từ xa và có thể điều khiển cờ xanh/đỏ qua servo, giúp tàu thuyền nhận thông báo để ra vào cảng an toàn. Hệ thống này giúp cải thiện hiệu quả vận hành và giảm thiểu rủi ro tại cảng.
