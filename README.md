@@ -14,21 +14,24 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
   Kết nối cảm biến với ESP32, dữ liệu từ cảm biến sẽ được đọc và xử lý liên tục.
   
 ***ESP32 làm bộ điều khiển trung tâm:***
-  Cảnh báo tại chỗ: Dựa trên dữ liệu từ cảm biến, ESP32 điều khiển LED RGB để đưa ra cảnh báo trực quan:
-    Màu xanh lá: Mực nước an toàn.
-    Màu vàng: Mực nước gần mức nguy hiểm.
-    Màu đỏ: Mực nước dưới ngưỡng an toàn.
-    Truyền dữ liệu: ESP32 đẩy dữ liệu mực nước qua giao thức MQTT lên máy chủ (cloud hoặc cục bộ).
+  - Cảnh báo tại chỗ: Dựa trên dữ liệu từ cảm biến, ESP32 điều khiển LED RGB để đưa ra cảnh báo trực quan:
+  
+    + Màu xanh lá: Mực nước an toàn.
+    + Màu vàng: Mực nước gần mức nguy hiểm.
+    + Màu đỏ: Mực nước dưới ngưỡng an toàn.
+    
+  - Truyền dữ liệu: ESP32 đẩy dữ liệu mực nước qua giao thức MQTT lên máy chủ (cloud hoặc cục bộ).
   
 ***Hệ thống MQTT:***
-  ESP32 (Publisher): Gửi thông tin mực nước đến broker MQTT.
-  Người giám sát (Subscriber): Nhận dữ liệu mực nước qua ứng dụng MQTT (ví dụ: smartphone, máy tính).
-  Gửi lệnh điều khiển: Người giám sát có thể gửi lệnh từ ứng dụng MQTT để điều khiển servo trên ESP32.
+
+  - ESP32 (Publisher): Gửi thông tin mực nước đến broker MQTT.
+  - Người giám sát (Subscriber): Nhận dữ liệu mực nước qua ứng dụng MQTT (ví dụ: smartphone, máy tính).
+  - Gửi lệnh điều khiển: Người giám sát có thể gửi lệnh từ ứng dụng MQTT để điều khiển servo trên ESP32.
   
 ***Điều khiển cờ báo hiệu:***
-  ESP32 nhận lệnh từ MQTT để điều khiển servo quay cờ:
-    Cờ xanh: Tín hiệu cho phép tàu qua.
-    Cờ đỏ: Tín hiệu cấm tàu qua do mực nước không an toàn. 
+  - ESP32 nhận lệnh từ MQTT để điều khiển servo quay cờ:
+    + Cờ xanh: Tín hiệu cho phép tàu qua.
+    + Cờ đỏ: Tín hiệu cấm tàu qua do mực nước không an toàn. 
 ### Sơ đồ khối dự kiến
 ![Hình 1](https://github.com/user-attachments/assets/b8ee558f-c87c-40b4-842d-002a7d4b914a)
 *Hình 1*
