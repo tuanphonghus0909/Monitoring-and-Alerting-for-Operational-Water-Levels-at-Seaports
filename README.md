@@ -1,4 +1,4 @@
-# Monitoring-and-Alerting-for-Operational-Water-Levels-at-Seaports
+# Giám sát và Cảnh báo Mực Nước Khai Thác tại Cảng Biển
 ### Đặt vấn đề
 Trong bối cảnh toàn cầu hóa và sự phát triển không ngừng của ngành vận tải biển, bản thân là một người sinh ra và lớn lên tại Hải Phòng, tôi nhận thấy rằng các cảng biển ngày càng phải đối mặt với yêu cầu nâng cao năng lực tiếp nhận và vận hành các tàu có trọng tải lớn. Một trong những yếu tố then chốt ảnh hưởng trực tiếp đến sự an toàn và hiệu quả hoạt động của cảng là mực nước khai thác – độ sâu thực tế tại các khu vực tiếp nhận tàu thuyền.
 
