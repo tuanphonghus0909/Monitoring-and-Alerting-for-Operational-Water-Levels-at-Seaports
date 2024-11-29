@@ -52,7 +52,7 @@ void checkWaterLevel() {
     }
 
     mqttClient.publish(water_status_topic, String(valueWL).c_str(), false);
-    mqttClient.publish(led_status_topic, status.c_str(), false);
+    //mqttClient.publish(led_status_topic, status.c_str(), false);
 
     Serial.print("Water Level: ");
     Serial.println(waterLevel);
