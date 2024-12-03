@@ -37,11 +37,10 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 *Hình 1*
 ### Mục tiêu đề tài
 Đề tài này xây dựng hệ thống giám sát và cảnh báo mực nước tại cảng biển sử dụng IoT. Mục tiêu chính là đo mực nước bằng cảm biến và vi điều khiển ESP32, cảnh báo qua LED RGB (xanh, vàng, đỏ) tùy vào mức độ an toàn của mực nước. Dữ liệu sẽ được đẩy lên MQTT để giám sát từ xa và có thể điều khiển cờ xanh/đỏ qua servo, giúp tàu thuyền nhận thông báo để ra vào cảng an toàn. Hệ thống này giúp cải thiện hiệu quả vận hành và giảm thiểu rủi ro tại cảng.
-# ESP32 Water Level Monitoring and Servo Control System
 
-## **Chức năng chính của hệ thống**
+### **Chức năng chính của hệ thống**
 
-### **1. Giám sát mực nước (cảm biến nước):**
+#### **1. Giám sát mực nước (cảm biến nước):**
 - **Cảm biến mực nước:** Kết nối qua chân `WATER_SENSOR_PIN`.
 - Hệ thống đọc giá trị analog từ cảm biến (0 đến `MAX_VALUE`, tương ứng với 0% đến 100%).
 - **Phân loại mức nước:**
@@ -58,13 +57,13 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
   - Chủ đề `esp32/water_status`: Gửi mức nước (tính theo %).
   - Chủ đề `esp32/water_status1`: Gửi giá trị analog thô từ cảm biến.
 
-### **2. Điều khiển động cơ servo:**
+#### **2. Điều khiển động cơ servo:**
 - Servo được điều khiển qua MQTT trên chủ đề `esp32/servo_control`.
 - **Lệnh điều khiển:**
   - **"Permission":** Servo xoay đến 180°.
   - **"Stop":** Servo quay lại vị trí 0°.
 
-### **3. Kết nối WiFi và MQTT:**
+#### **3. Kết nối WiFi và MQTT:**
 - **Tự động kết nối** đến WiFi và MQTT broker dựa trên thông tin từ tệp bí mật.
 - Hệ thống **tự động kết nối lại** nếu mất kết nối MQTT.
 
@@ -73,6 +72,6 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 
 ---
 
-## **Kết quả đầu ra mong đợi**
+### **Kết quả đầu ra mong đợi**
 
 
