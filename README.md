@@ -60,8 +60,8 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 #### **2. Điều khiển động cơ servo:**
 - Servo được điều khiển qua MQTT trên chủ đề `esp32/servo_control`.
 - **Lệnh điều khiển:**
-  - **"Permission":** Servo xoay đến 180°.
-  - **"Stop":** Servo quay lại vị trí 0°.
+  - **"Permission":** Servo xoay đến 180° thể hiện cờ xanh.
+  - **"Stop":** Servo quay lại vị trí 0° thể hiện cờ đỏ.
 
 #### **3. Kết nối WiFi và MQTT:**
 - **Tự động kết nối** đến WiFi và MQTT broker dựa trên thông tin từ tệp bí mật.
@@ -70,8 +70,33 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 ### **4. Gửi tín hiệu định kỳ:**
 - **Ticker** chạy mỗi giây để kiểm tra mực nước và cập nhật trạng thái LED.
 
+### **5. Kết nối phần cứng:**
+#### **5.1. Cảm biến mực nước**
+- **Chân tín hiệu (OUT)** của cảm biến mực nước → Chân **36 (WATER_SENSOR_PIN)** trên ESP32.
+- **Chân VCC** của cảm biến → Chân **3.3V** trên ESP32.
+- **Chân GND** của cảm biến → Chân **GND** trên ESP32.
+
+##### **5.2. Đèn LED RGB anode chung**
+- **Chân R (Red)** của LED → Chân **23 (RGB_LED_RED)** trên ESP32.
+- **Chân G (Green)** của LED → Chân **22 (RGB_LED_GREEN)** trên ESP32.
+- **Chân B (Blue)** của LED → Chân **21 (RGB_LED_BLUE)** trên ESP32.
+- **Chân +** của LED → Chân **3.V** trên ESP32.
+
+##### **5.3. Động cơ Servo**
+- **Chân tín hiệu (Signal)** của Servo → Chân **13 (SERVO_PIN)** trên ESP32.
+- **Chân VCC** của Servo → Chân **Vn** trên ESP32 .
+- **Chân GND** của Servo → Chân **GND** trên ESP32.
+![Hình 2](https://github.com/user-attachments/assets/3090f785-dfe0-4695-bd93-a514cad17fbb)
+*Hình 2*
 ---
 
-### **Kết quả đầu ra mong đợi**
+### **Kết quả **
+![Hình 3](https://github.com/user-attachments/assets/16d0272b-4075-455d-b6e7-ec36cf17b21e)
+*Hình 3: Giao diện Node-red dashboard*
+
+#### **Video**
+Truy cập vào link drive bên dưới để xem video:
+https://drive.google.com/drive/folders/1f16jk0wH74lBSP3PGPNrzH9KNaqFcBa-?usp=sharing
+
 
 
