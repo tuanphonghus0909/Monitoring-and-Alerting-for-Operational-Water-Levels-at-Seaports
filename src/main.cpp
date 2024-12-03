@@ -15,10 +15,10 @@
 #define RGB_LED_BLUE 21U
 #define SERVO_PIN 13U
 
-#define MAX_VALUE 2400.0
+#define MAX_VALUE 2500.0
 
 const char *water_status_topic = "esp32/water_status";
-const char *led_status_topic = "esp32/led_status";
+const char *water_status1_topic = "esp32/water_status1";
 const char *servo_control_topic = "esp32/servo_control";
 
 WiFiClientSecure tlsClient;
@@ -52,7 +52,7 @@ void checkWaterLevel() {
     }
 
     mqttClient.publish(water_status_topic, String(valueWL).c_str(), false);
-    //mqttClient.publish(led_status_topic, status.c_str(), false);
+    mqttClient.publish(water_status1_topic, String(waterLevel).c_str(), false);
 
     Serial.print("Water Level: ");
     Serial.println(waterLevel);
