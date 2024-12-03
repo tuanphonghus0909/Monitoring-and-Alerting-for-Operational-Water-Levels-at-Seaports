@@ -95,7 +95,7 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 *Hình 3: Giao diện Node-red dashboard*
 
 #### **Video**
-Truy cập vào link drive bên dưới để xem video:
+Truy cập vào link drive để xem video:
 https://drive.google.com/drive/folders/1f16jk0wH74lBSP3PGPNrzH9KNaqFcBa-?usp=sharing
 
 
