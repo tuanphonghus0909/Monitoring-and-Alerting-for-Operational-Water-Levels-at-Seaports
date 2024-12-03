@@ -1,0 +1,370 @@
+[
+    {
+        "id": "3080b0361a242a7a",
+        "type": "tab",
+        "label": "IOT_GK",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "99bfac126724f65f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c1088c93b1644ea4",
+        "type": "ui_tab",
+        "name": "Hệ thống đo lường lượng nước",
+        "icon": "f0b6",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ec72b2a903f4cce2",
+        "type": "ui_group",
+        "name": "Trạng Thái",
+        "tab": "c1088c93b1644ea4",
+        "order": 1,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ed96e13f2437c5eb",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "48a113f51f254502a6fc327abf6fe6a5.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a56f8967af78bfb3",
+        "type": "ui_group",
+        "name": "SENSOR",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "734b5b45ad3ff782",
+        "type": "ui_group",
+        "name": "CONTROL",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ba1361782906f238",
+        "type": "mqtt in",
+        "z": "3080b0361a242a7a",
+        "name": "",
+        "topic": "esp32/water_status",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "ed96e13f2437c5eb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "a724ef5f1b659262"
+            ]
+        ]
+    },
+    {
+        "id": "a724ef5f1b659262",
+        "type": "ui_gauge",
+        "z": "3080b0361a242a7a",
+        "name": "",
+        "group": "ec72b2a903f4cce2",
+        "order": 1,
+        "width": 8,
+        "height": 6,
+        "gtype": "wave",
+        "title": "Level Water",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "b41502cffb2da4f7",
+        "type": "mqtt out",
+        "z": "3080b0361a242a7a",
+        "name": "",
+        "topic": "esp32/servo_control",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "ed96e13f2437c5eb",
+        "x": 680,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "button_permission",
+        "type": "ui_button",
+        "z": "3080b0361a242a7a",
+        "name": "Permission Button",
+        "group": "ec72b2a903f4cce2",
+        "order": 3,
+        "width": 8,
+        "height": 2,
+        "passthru": false,
+        "label": "Permission",
+        "tooltip": "",
+        "color": "White",
+        "bgcolor": "Green",
+        "className": "",
+        "icon": "directions_ferry",
+        "payload": "Permission",
+        "payloadType": "str",
+        "topic": "esp32/servo_control",
+        "topicType": "str",
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "b41502cffb2da4f7"
+            ]
+        ]
+    },
+    {
+        "id": "button_stop",
+        "type": "ui_button",
+        "z": "3080b0361a242a7a",
+        "name": "Stop Button",
+        "group": "ec72b2a903f4cce2",
+        "order": 4,
+        "width": 8,
+        "height": 2,
+        "passthru": false,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "Black",
+        "bgcolor": "Red",
+        "className": "",
+        "icon": "block",
+        "payload": "Stop",
+        "payloadType": "str",
+        "topic": "esp32/servo_control",
+        "topicType": "str",
+        "x": 350,
+        "y": 420,
+        "wires": [
+            [
+                "b41502cffb2da4f7"
+            ]
+        ]
+    },
+    {
+        "id": "cdd83d4031e770d5",
+        "type": "mqtt in",
+        "z": "3080b0361a242a7a",
+        "name": "",
+        "topic": "esp32/water_status1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "ed96e13f2437c5eb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "f617bbdd9e6806b3"
+            ]
+        ]
+    },
+    {
+        "id": "f617bbdd9e6806b3",
+        "type": "ui_chart",
+        "z": "3080b0361a242a7a",
+        "name": "",
+        "group": "ec72b2a903f4cce2",
+        "order": 2,
+        "width": 8,
+        "height": 6,
+        "label": "Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    }
+]
