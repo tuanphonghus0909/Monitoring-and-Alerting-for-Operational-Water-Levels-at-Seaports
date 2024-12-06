@@ -93,7 +93,7 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 ### **Kết quả **
 ![Hình 3](https://github.com/user-attachments/assets/16d0272b-4075-455d-b6e7-ec36cf17b21e)
 *Hình 3: Giao diện Node-red dashboard*
-
+Link tài liệu dịch Warren Gay - FreeRTOS for ESP32-Arduino :https://github.com/tuanphonghus0909/Warren-Gay---FreeRTOS-for-ESP32-Arduino.git
 #### **Video**
 Truy cập vào link drive để xem video:
 https://drive.google.com/drive/folders/1f16jk0wH74lBSP3PGPNrzH9KNaqFcBa-?usp=sharing
