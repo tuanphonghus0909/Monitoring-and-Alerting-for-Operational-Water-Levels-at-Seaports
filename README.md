@@ -80,7 +80,7 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 - **Chân R (Red)** của LED → Chân **23 (RGB_LED_RED)** trên ESP32.
 - **Chân G (Green)** của LED → Chân **22 (RGB_LED_GREEN)** trên ESP32.
 - **Chân B (Blue)** của LED → Chân **21 (RGB_LED_BLUE)** trên ESP32.
-- **Chân +** của LED → Chân **3.V** trên ESP32.
+- **Chân +** của LED → Chân **3.3V** trên ESP32.
 
 ##### **5.3. Động cơ Servo**
 - **Chân tín hiệu (Signal)** của Servo → Chân **13 (SERVO_PIN)** trên ESP32.
@@ -98,5 +98,5 @@ Từ vấn đề trên, thiết kế một hệ thống IOT giám sát mực nư
 Truy cập vào link drive để xem video:
 https://drive.google.com/drive/folders/1f16jk0wH74lBSP3PGPNrzH9KNaqFcBa-?usp=sharing
 
-
+#### **Link tài liệu dịch Warren Gay - FreeRTOS for ESP32-Arduino** :https://github.com/tuanphonghus0909/Warren-Gay---FreeRTOS-for-ESP32-Arduino.git
 
